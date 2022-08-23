@@ -1,0 +1,34 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        double point = 5.5789590436371782;
+     
+        //bankers rounding - round to nearest int
+        Console.WriteLine($"Just Round: {Math.Round(point)}\n");
+        
+        // round to 2 decimal places
+        Console.WriteLine($"Rounded to precise decimal places (2): {Math.Round(point, 2)}\n");
+        
+        //floor and ceil
+        Console.WriteLine($"Floored: {Math.Floor(point)}; Ceiled: {Math.Ceiling(point)}\n");
+        
+        //truncated
+        Console.WriteLine($"Truncated: {Math.Truncate(point)}\n");
+        
+        //min and max
+        Console.WriteLine($"Min of 3 and 30 is {Math.Min(3,30)}\n");
+        Console.WriteLine($"Max of 3 and 30 is {Math.Max(3,30)}\n");
+        
+        //absolute value
+        Console.WriteLine($"Absolute value of -81 is {Math.Abs(-81)}\n");
+        
+        //sign
+        Console.WriteLine($"Sign of -81 is {Math.Sign(-81)}, whereas sign of 90 is {Math.Sign(90)}\n");
+        
+        //exponentiation
+        Console.WriteLine($"2 raised to power of 8 is {Math.Pow(2,4)}\n");
+    }
+}
