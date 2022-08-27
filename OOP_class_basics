@@ -1,0 +1,32 @@
+using System;
+
+class Person {
+    //field -private for the class
+    string _middlename = "cat";
+    
+    //properties - can be accessed from outside as well
+    public string firstName {get; set;}
+    public string lastName {get; set;}
+    
+    //property that behaves like a method
+    public string fn {
+        get {
+            return firstName + " " + lastName;
+        }
+    }
+    public string getFullName() {
+        return firstName.ToUpper() + " " + lastName.ToUpper();
+    }
+}
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Person p = new Person();
+        p.firstName = "sri";
+        p.lastName = "vatsa";
+        Console.WriteLine(p.getFullName());
+        Console.WriteLine(p.fn);
+    }
+}
