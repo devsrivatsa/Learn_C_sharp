@@ -43,6 +43,10 @@ public class HelloWorld
             Console.WriteLine(words[i]);
         }
         
+        //7. verbatim string literals (similar to an r-string in python)
+        string buy = @"\t this \t will not \t escape the tab character"
+        Console.WriteLine(buy);
+        
         
     }
 }
