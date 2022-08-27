@@ -1,0 +1,38 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("what is your age ?");
+        //take input from User
+        int age = Int32.Parse(Console.ReadLine());
+        if ((age >= 18) && !(age > 60)) {
+            int counter=0;
+            //loop
+            while (counter < 8) {
+                
+                Console.WriteLine("What is the club password ?");
+                string pass = Console.ReadLine();
+                
+                if (pass == "abcd1") {
+                    Console.WriteLine("Welcome Yo!!");
+                    break;
+                } else if ((pass == "bye")||(pass == "goodbye")||(pass == "good day")) {
+                    Console.WriteLine("chill..");
+                    break; 
+                } else {
+                    Console.WriteLine("Incorrect Yo");
+                }
+                //increment
+                counter++;
+            }
+        } else {
+            Console.WriteLine("You are not allowed in here! Go hone!!");
+        }
+    }
+}
