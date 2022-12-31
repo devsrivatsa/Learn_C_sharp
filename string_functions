@@ -47,6 +47,12 @@ public class HelloWorld
         string buy = @"\t this \t will not \t escape the tab character"
         Console.WriteLine(buy);
         
+        //8. String To Array
+        string a = "convert";
+        char[] chararray = a.ToCharArray(); //returns a character array
+        
+        //9. Reverse a string
+        Array.Reverse(chararray); //modifies in place
         
     }
 }
